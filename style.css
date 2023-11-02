@@ -178,6 +178,7 @@ p {
 #spacing1 {
   position: relative;
   bottom: 50px;
+  top: -120px;
 }
 
 .emailme {
@@ -415,7 +416,7 @@ footer p {
     text-transform: uppercase;
     color: #3d535f;
     position: relative;
-    right: 60px;
+    right: 30px;
   }
 
   .navitem {
@@ -518,7 +519,7 @@ footer p {
   background-color: #b5cad541;
   width: 300px;
   position: relative;
-  left: 10%;
+  left: 12%;
   border-radius: 20px;
 }
 .insideskills div {
@@ -533,7 +534,7 @@ footer p {
   transform: rotate(-0.25turn);
   font-weight: 600;
   width: max-content;
-  left: -30px;
+  left: -24px;
 }
 .h1-1::after {
   content: "";
@@ -548,7 +549,7 @@ footer p {
 #h1-1 {
  position: relative;
  top: 20px;
- left: -10px;
+ left: 0px;
   font-weight: 500;
   font-size: 20px;
 }
