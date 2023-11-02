@@ -393,7 +393,7 @@ footer p {
   font-size: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 667px) {
   /* For mobile phones: */
 
   .container{
@@ -438,7 +438,7 @@ footer p {
     padding: 5px;
     overflow: hidden;
     position: relative;
-    width: 99%;
+    width: 98%;
   }
 
   .wrapper::before {
@@ -518,7 +518,7 @@ footer p {
   background-color: #b5cad541;
   width: 300px;
   position: relative;
-  left: 20%;
+  left: 10%;
   border-radius: 20px;
 }
 .insideskills div {
@@ -529,11 +529,11 @@ footer p {
 
 .h1-1 {
   position: relative;
-  top: 190px;
+  top: 160px;
   transform: rotate(-0.25turn);
   font-weight: 600;
   width: max-content;
-  left: 30px;
+  left: -30px;
 }
 .h1-1::after {
   content: "";
@@ -548,6 +548,7 @@ footer p {
 #h1-1 {
  position: relative;
  top: 20px;
+ left: -10px;
   font-weight: 500;
   font-size: 20px;
 }
@@ -673,7 +674,7 @@ footer {
 }
 footer p {
   position: relative;
-  top: 70px;
+  top: 60px;
 }
 
 
@@ -684,7 +685,7 @@ footer p {
 
 .secp {
   position: relative;
-  left: 46px;
+  left: 0px;
   font-size: 10px;
   align-items: center;
   justify-content: center;
