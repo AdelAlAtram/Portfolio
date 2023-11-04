@@ -59,33 +59,17 @@
                         MY PROJECTS
                     </div>
                     <div class="font-light max-w-lg mt-5 mb-5 text-sm">
-                        Here are the projects I've worked on. Wanna create yours? <a href="mailto:adelaaymann@gmail.com" class="emailme">Email me</a>
+                        Here are the projects I've worked on. Wanna create yours? <a href="#talk" class="emailme">Email me</a>
                     </div>
                 </div>
     
            
-                <div
-                    class="flex flex-col md:flex-row space-x-0 md:space-x-8 space-y-12  md:space-y-0 justify-center items-center mt-10">
-                    <div class="bg-[#fef1c3] rounded-xl">
-                        <div class="flex flex-col p-10 rounded-xl bg-white shadow-xl translate-x-3 translate-y-2" id="wi">
-                            <img src="logo.jpg" class="w-10">
-                            <div class="mt-3 font-semibold text-lg">GAMING COMMUNITY</div>
-                            <p class="pFont">
-                                HTML, CSS, JavaScript, React, Nodejs, MongoDB
-                            </p>                            
-                            <div class="my-4">
-                                <span class="font-bold text-base">solo project</span>
-                            </div>
-    
-                            <button class="bg-[#e2e6fc] px-4 py-3 rounded-full  border border-[#F0F0F6] shadow-xl mt-4">
-                               <a href="#">Viwe project</a>
-                            </button>
-                        </div>
-                    </div>
+                <div class="flex flex-col md:flex-row space-x-0 md:space-x-8 space-y-12  md:space-y-0 justify-center items-center mt-10">
+                  
     
                     <div class="bg-[#efcffe] rounded-xl">
                         <div class="flex flex-col p-10 rounded-xl bg-white shadow-xl translate-x-3 translate-y-2" id="wi">
-                            <img src="logo.jpg" class="w-10">
+                            <img src="card.png" class="prlogo">
                             <div class="mt-3 font-semibold text-lg">CARD GAME</div>
                             <p class="pFont">
                                 HTML, CSS, JS, React, SQL, Redux, ElephantSQL
@@ -95,7 +79,24 @@
                             </div>
     
                             <button class="bg-[#e2e6fc] px-4 py-3 rounded-full  border border-[#F0F0F6] shadow-xl mt-4">
-                               <a href="https://youtu.be/LJAeK82zOVc?si=wuNs-7RKihoGK0c1" target="_blank">Viwe project</a>
+                               <a href="https://youtu.be/LJAeK82zOVc?si=wuNs-7RKihoGK0c1" target="_blank">View project</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#fef1c3] rounded-xl">
+                        <div class="flex flex-col p-10 rounded-xl bg-white shadow-xl translate-x-3 translate-y-2" id="wi">
+                            <img src="logo.jpg" class="prlogo">
+                            <div class="mt-3 font-semibold text-lg">GAMING COMMUNITY</div>
+                            <p class="pFont">
+                                HTML, CSS, JavaScript, React, Nodejs, MongoDB
+                            </p>                            
+                            <div class="my-4">
+                                <span class="font-bold text-base">solo project</span>
+                            </div>
+    
+                            <button class="bg-[#e2e6fc] px-4 py-3 rounded-full  border border-[#F0F0F6] shadow-xl mt-4">
+                               <a href="#">View project</a>
                             </button>
                         </div>
                     </div>
@@ -103,7 +104,7 @@
     
                     <div class="bg-[#d7dbfc] rounded-xl">
                         <div class="flex flex-col p-10 rounded-xl bg-white shadow-xl translate-x-3 translate-y-2" id="wi">
-                            <img src="logo.jpg" class="w-10">
+                            <img src="leaf.png" class="prlogo">
                             <div class="mt-3 font-semibold text-lg">BOOK STORE</div>
                             <p class="pFont">
                                 HTML, CSS, PHP, phpMyAdmin, BOOTSTRAP
@@ -113,7 +114,7 @@
                             </div>
     
                             <button class="bg-[#e2e6fc] px-4 py-3 rounded-full  border border-[#F0F0F6] shadow-xl mt-4">
-                               <a href="#">Viwe project</a>
+                               <a href="#">View project</a>
                             </button>
                         </div>
                     </div>
@@ -147,7 +148,7 @@
                     <h6 class="centerr">GitHub</h6>
                 </div>
                 <div>
-                    <img src="node.png" alt="" class="logoimg">
+                    <img src="nodeee.png" alt="" class="logoimg">
                     <h6 class="centerr">NodeJs</h6>
                 </div>
                 <div>
@@ -159,7 +160,7 @@
                     <h6 class="centerr">Bootstrap</h6>
                 </div>
                 <div>
-                    <img src="mongo.png" alt="" class="logoimg">
+                    <img src="mongodb_originalpng.png" alt="" class="logoimg">
                     <h6 class="centerr">mongoDB</h6>
                 </div>
             </div>
@@ -177,12 +178,12 @@
         </div>
         <div class="right">
             <h1>if you have a project in mind or just want to chat, feel free to get in touch <br> and let's make some magic happen <span class="orangespan">.</span></h1>
-            <input type="text" placeholder="First name" class="input1" id="firstname">
-            <input type="text" placeholder="Last name" class="input2" id="lastname">
+            <input type="text" placeholder="First name" class="input1" id="firstname" required>
+            <input type="text" placeholder="Last name" class="input2" id="lastname" required>
             <br>
-            <input type="email"  class="input33"  placeholder="Email" id="email">
+            <input type="email"  class="input33"  placeholder="Email" id="email" required>
             <br>
-            <textarea placeholder="What's on your mind" class="input3" id="subject"></textarea>
+            <textarea placeholder="What's on your mind" class="input3" id="subject" required></textarea>
             <button class="orangebtn" onclick="sendmail()">shoot</button>
         </div>
     </section>
