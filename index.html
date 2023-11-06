@@ -1,234 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adel Alatram</title>
-    <link rel = "icon" href ="a.jpg" type = "image/x-icon"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="a.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-</head>
-<body>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <script>
+      const popup = () => {
+        const pop = document.querySelector("#popup-modal");
+        pop.classList.remove("hidden");
+      };
+      const hideshow = () => {
+        const add = document.querySelector("#popup-modal");
+        add.classList.add("hidden");
+      };
+    </script>
+
+    <div
+      id="popup-modal"
+      tabindex="-1"
+      class="z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative w-full max-w-md max-h-full">
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <div class="p-6 text-center">
+            <h3
+              class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400"
+            >
+              Email sent successfully
+            </h3>
+            <button
+              data-modal-hide="popup-modal"
+              type="button"
+              class="text-white bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"
+              onclick="hideshow()"
+            >
+              COOL
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container" id="home">
-        <nav>
-            <div class="logo">ADEL ALATRAM</div>
+      <nav>
+        <div class="logo">ADEL ALATRAM</div>
         <ul class="navitem">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#skillss">SKILLS</a></li>
-            <li><a href="#talk">LET'S TALK</a></li>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#skillss">SKILLS</a></li>
+          <li><a href="#talk">LET'S TALK</a></li>
         </ul>
         <div class="links">
-            <a href="https://www.linkedin.com/in/adel-alatram/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/do1a811/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:adelaaymann@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/adel-alatram/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/do1a811/?next=%2F" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="mailto:adelaaymann@gmail.com" target="_blank"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
         </div>
-        </nav>
-        <div class="wrapper">
-            <div class="cols cols0">
-                <span class="topline">HELLO</span>
-                <h1 class="h1">I'm a <span class="lines">programmer</span></h1>
-                <p>A creative and thoughtful website developer presents to you a summary of his career in this simple Portfolio</p>
-                <div class="btn">
-                    <button class="button"><a href="https://www.canva.com/design/DAFyYdEc3aM/6YvG59BdFixZ1uxx-VcD5Q/edit?utm_content=DAFyYdEc3aM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">CV</a></button>
-                    <button class="button" ><a href="#talk">HIRE ME</a></button>
-                </div>
-            </div>
-            <div class="cols cols1">
-                <div class="img1">
-                    <img src="removebg.png">
-                </div>
-            </div>
+      </nav>
+      <div class="wrapper">
+        <div class="cols cols0">
+          <span class="topline">HELLO</span>
+          <h1 class="h1">I'm a <span class="lines"></span></h1>
+          <p>
+            A creative and thoughtful website developer presents to you a
+            summary of his career in this simple Portfolio
+          </p>
+          <div class="btn">
+            <button class="button">
+              <a
+                href="https://drive.google.com/file/d/14vv1IJUa4IemsPGFxvbDFPeWpWVmn44N/view?usp=sharing"
+                target="_blank"
+                >CV</a
+              >
+            </button>
+            <button class="button"><a href="#talk">HIRE ME</a></button>
+          </div>
         </div>
+        <div class="cols cols1">
+          <div class="img1">
+            <img src="removebg.png" />
+          </div>
+        </div>
+      </div>
     </div>
 
     <section id="projects">
-        <div class="flex items-center justify-center flex-col bg-[#f3f5f8] min-h-screen" >
-           
-            <div class="bg-[#F4F5FA] p-10 rounded-xl" id="spacing1">
-              
-                <div class="flex flex-col justify-center items-center text-center">
-                    <div class="max-w-sm"  id="myproj">
-                        MY PROJECTS
-                    </div>
-                    <div class="font-light max-w-lg mt-5 mb-5 text-sm">
-                        Here are the projects I've worked on. Wanna create yours? <a href="#talk" class="emailme">Email me</a>
-                    </div>
-                </div>
-    
-           
-                <div class="flex flex-col md:flex-row space-x-0 md:space-x-8 space-y-12  md:space-y-0 justify-center items-center mt-10">
-                  
-    
-                    <div class="bg-[#efcffe] rounded-xl">
-                        <div class="flex flex-col p-10 rounded-xl bg-white shadow-xl translate-x-3 translate-y-2" id="wi">
-                            <img src="card.png" class="prlogo">
-                            <div class="mt-3 font-semibold text-lg">CARD GAME</div>
-                            <p class="pFont">
-                                HTML, CSS, JS, React, SQL, Redux, ElephantSQL
-                            </p>      
-                            <div class="my-4">
-                                <span class="font-bold text-base">team project</span>
-                            </div>
-    
-                            <button class="bg-[#e2e6fc] px-4 py-3 rounded-full  border border-[#F0F0F6] shadow-xl mt-4">
-                               <a href="https://youtu.be/LJAeK82zOVc?si=wuNs-7RKihoGK0c1" target="_blank">View project</a>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#fef1c3] rounded-xl">
-                        <div class="flex flex-col p-10 rounded-xl bg-white shadow-xl translate-x-3 translate-y-2" id="wi">
-                            <img src="logo.jpg" class="prlogo">
-                            <div class="mt-3 font-semibold text-lg">GAMING COMMUNITY</div>
-                            <p class="pFont">
-                                HTML, CSS, JavaScript, React, Nodejs, MongoDB
-                            </p>                            
-                            <div class="my-4">
-                                <span class="font-bold text-base">solo project</span>
-                            </div>
-    
-                            <button class="bg-[#e2e6fc] px-4 py-3 rounded-full  border border-[#F0F0F6] shadow-xl mt-4">
-                               <a href="#">View project</a>
-                            </button>
-                        </div>
-                    </div>
-    
-    
-                    <div class="bg-[#d7dbfc] rounded-xl">
-                        <div class="flex flex-col p-10 rounded-xl bg-white shadow-xl translate-x-3 translate-y-2" id="wi">
-                            <img src="leaf.png" class="prlogo">
-                            <div class="mt-3 font-semibold text-lg">BOOK STORE</div>
-                            <p class="pFont">
-                                HTML, CSS, PHP, phpMyAdmin, BOOTSTRAP
-                            </p>
-                            <div class="my-4">
-                                <span class="font-bold text-base">solo project</span>
-                            </div>
-    
-                            <button class="bg-[#e2e6fc] px-4 py-3 rounded-full  border border-[#F0F0F6] shadow-xl mt-4">
-                               <a href="#">View project</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+      <div
+        class="flex items-center justify-center flex-col bg-[#f3f5f8] min-h-screen"
+      >
+        <div class="bg-[#F4F5FA] p-10 rounded-xl" id="spacing1">
+          <div class="flex flex-col justify-center items-center text-center">
+            <div class="max-w-sm" id="myproj">MY PROJECTS</div>
+            <div class="font-light max-w-lg mt-5 mb-5 text-sm">
+              Here are the projects I've worked on. Wanna create yours?
+              <a href="#talk" class="emailme">Email me</a>
             </div>
+          </div>
+
+          <div
+            class="flex flex-col md:flex-row space-x-0 md:space-x-8 space-y-12 md:space-y-0 justify-center items-center mt-10"
+          >
+            <div class="bg-[#ff010166] rounded-xl">
+              <div
+                class="flex flex-col p-10 rounded-xl bg-white shadow-xl translate-x-3 translate-y-2"
+                id="wi"
+              >
+                <img src="LOGO.png" class="prlogo" />
+                <div class="mt-3 font-semibold text-lg">Pet services</div>
+                <p class="pFont">
+                  Lorem ipsum dolor sit ametametametametametamet.
+                </p>
+                <div class="my-4">
+                  <span class="font-bold text-base">solo project</span>
+                </div>
+
+                <button
+                  class="bg-[#e2e6fc] px-4 py-3 rounded-full border border-[#F0F0F6] shadow-xl mt-4"
+                >
+                  <a
+                    href="https://youtu.be/LJAeK82zOVc?si=wuNs-7RKihoGK0c1"
+                    target="_blank"
+                    >View project</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="bg-[#efcffe] rounded-xl">
+              <div
+                class="flex flex-col p-10 rounded-xl bg-white shadow-xl translate-x-3 translate-y-2"
+                id="wi"
+              >
+                <img src="card.png" class="prlogo" />
+                <div class="mt-3 font-semibold text-lg">CARD GAME</div>
+                <p class="pFont">
+                  HTML, CSS, JS, React, SQL, Redux, ElephantSQL
+                </p>
+                <div class="my-4">
+                  <span class="font-bold text-base">team project</span>
+                </div>
+
+                <button
+                  class="bg-[#e2e6fc] px-4 py-3 rounded-full border border-[#F0F0F6] shadow-xl mt-4"
+                >
+                  <a
+                    href="https://youtu.be/LJAeK82zOVc?si=wuNs-7RKihoGK0c1"
+                    target="_blank"
+                    >View project</a
+                  >
+                </button>
+              </div>
+            </div>
+
+            <div class="bg-[#fef1c3] rounded-xl">
+              <div
+                class="flex flex-col p-10 rounded-xl bg-white shadow-xl translate-x-3 translate-y-2"
+                id="wi"
+              >
+                <img src="logo.jpg" class="prlogo" />
+                <div class="mt-3 font-semibold text-lg">GAMING COMMUNITY</div>
+                <p class="pFont">
+                  HTML, CSS, JavaScript, React, Nodejs, MongoDB
+                </p>
+                <div class="my-4">
+                  <span class="font-bold text-base">solo project</span>
+                </div>
+
+                <button
+                  class="bg-[#e2e6fc] px-4 py-3 rounded-full border border-[#F0F0F6] shadow-xl mt-4"
+                >
+                  <a
+                    href="https://youtu.be/32zEZF4oOvM?si=EyHPPqInzEbJRica"
+                    target="_blank"
+                    >View project</a
+                  >
+                </button>
+              </div>
+            </div>
+
+            <div class="bg-[#d7dbfc] rounded-xl">
+              <div
+                class="flex flex-col p-10 rounded-xl bg-white shadow-xl translate-x-3 translate-y-2"
+                id="wi"
+              >
+                <img src="leaf.png" class="prlogo" />
+                <div class="mt-3 font-semibold text-lg">BOOK STORE</div>
+                <p class="pFont">HTML, CSS, PHP, phpMyAdmin, BOOTSTRAP</p>
+                <div class="my-4">
+                  <span class="font-bold text-base">solo project</span>
+                </div>
+
+                <button
+                  class="bg-[#e2e6fc] px-4 py-3 rounded-full border border-[#F0F0F6] shadow-xl mt-4"
+                >
+                  <a
+                    href="https://youtube.com/shorts/nPYNPzAa4mg?si=ra1ePnLLXR8UKUEr"
+                    target="_blank"
+                    >View project</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="skills" id="skillss">
-        <h1 class="justify-center items-center text-center" id="h1-1">SKILLS</h1>
-        <h1 class="h1-1">TECHNIQUES</h1>
-        <div class="insideskills">
-            <div class="front">
-                <div>
-                    <img src="html.png" alt="" class="logoimg">
-                    <h6 class="centerr">HTML</h6>
-                </div>
-                <div>
-                    <img src="css.png" alt="" class="logoimg">
-                    <h6 class="centerr">CSS</h6>
-                </div>
-                <div>
-                    <img src="js.png" alt="" class="logoimg">
-                    <h6 class="centerr">JavaScript</h6>
-                </div>
-                <div>
-                    <img src="react.png" alt="" class="logoimg">
-                    <h6 class="centerr">React</h6>
-                </div>
-                <div>
-                    <img src="hup.png" alt="" class="logoimg">
-                    <h6 class="centerr">GitHub</h6>
-                </div>
-                <div>
-                    <img src="nodeee.png" alt="" class="logoimg">
-                    <h6 class="centerr">NodeJs</h6>
-                </div>
-                <div>
-                    <img src="fire.png" alt="" class="logoimg">
-                    <h6 class="centerr">FireBase</h6>
-                </div>
-                <div>
-                    <img src="bootstrap.png" alt="" class="logoimg">
-                    <h6 class="centerr">Bootstrap</h6>
-                </div>
-                <div>
-                    <img src="mongodb_originalpng.png" alt="" class="logoimg">
-                    <h6 class="centerr">mongoDB</h6>
-                </div>
-            </div>
+      <h1 class="justify-center items-center text-center" id="h1-1">SKILLS</h1>
+      <h1 class="h1-1">TECHNIQUES</h1>
+      <div class="insideskills">
+        <div class="front">
+          <div>
+            <img src="html.png" alt="" class="logoimg" />
+            <h6 class="centerr">HTML</h6>
+          </div>
+          <div>
+            <img src="css.png" alt="" class="logoimg" />
+            <h6 class="centerr">CSS</h6>
+          </div>
+          <div>
+            <img src="js.png" alt="" class="logoimg" />
+            <h6 class="centerr">JavaScript</h6>
+          </div>
+          <div>
+            <img src="react.png" alt="" class="logoimg" />
+            <h6 class="centerr">React</h6>
+          </div>
+          <div>
+            <img src="hup.png" alt="" class="logoimg" />
+            <h6 class="centerr">GitHub</h6>
+          </div>
+          <div>
+            <img src="nodeee.png" alt="" class="logoimg" />
+            <h6 class="centerr">NodeJs</h6>
+          </div>
+          <div>
+            <img src="fire.png" alt="" class="logoimg" />
+            <h6 class="centerr">FireBase</h6>
+          </div>
+          <div>
+            <img src="bootstrap.png" alt="" class="logoimg" />
+            <h6 class="centerr">Bootstrap</h6>
+          </div>
+          <div>
+            <img src="mongodb_originalpng.png" alt="" class="logoimg" />
+            <h6 class="centerr">mongoDB</h6>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="talk" id="talk">
-        <div class="left">
-            <h6>HIRE ME</h6>
-            <a href="https://www.linkedin.com/in/adel-alatram/"><i class="fa-brands fa-linkedin"></i> Adel Alatram</a>
-            <br>
-            <a href="mailto:adelaaymann@gmail.com"><i class="fa-solid fa-envelope"></i> adelaaymann@gmail.com</a>
-            <br>
-            <a href=""><i class="fa-brands fa-whatsapp"></i> +962776088372</a>
-        </div>
-        <div class="right">
-            <h1>if you have a project in mind or just want to chat, feel free to get in touch <br> and let's make some magic happen <span class="orangespan">.</span></h1>
-            <input type="text" placeholder="First name" class="input1" id="firstname" required>
-            <input type="text" placeholder="Last name" class="input2" id="lastname" required>
-            <br>
-            <input type="email"  class="input33"  placeholder="Email" id="email" required>
-            <br>
-            <textarea placeholder="What's on your mind" class="input3" id="subject" required></textarea>
-            <button class="orangebtn" onclick="sendmail()">shoot</button>
-        </div>
+      <div class="left">
+        <h6>HIRE ME</h6>
+        <a href="https://www.linkedin.com/in/adel-alatram/"
+          ><i class="fa-brands fa-linkedin"></i> Adel Alatram</a
+        >
+        <br />
+        <a href="mailto:adelaaymann@gmail.com"
+          ><i class="fa-solid fa-envelope"></i> adelaaymann@gmail.com</a
+        >
+        <br />
+        <a href=""><i class="fa-brands fa-whatsapp"></i> +962776088372</a>
+      </div>
+      <div class="right">
+        <h1>
+          if you have a project in mind or just want to chat, feel free to get
+          in touch <br />
+          and let's make some magic happen <span class="orangespan">.</span>
+        </h1>
+        <input
+          type="text"
+          placeholder="First name"
+          class="input1"
+          id="firstname"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Last name"
+          class="input2"
+          id="lastname"
+          required
+        />
+        <br />
+        <input
+          type="email"
+          class="input33"
+          placeholder="Email"
+          id="email"
+          required
+        />
+        <br />
+        <textarea
+          placeholder="What's on your mind"
+          class="input3"
+          id="subject"
+          required
+        ></textarea>
+        <button class="orangebtn" onclick="sendmail()">shoot</button>
+      </div>
     </section>
 
     <footer>
-        <a href="#home" class="firstp"><i class="fa-solid fa-arrow-up"></i></a>
-        <p class="secp">
-             ©Adel -2023. All Rights Reserved.</p>
+      <a href="#home" class="firstp"><i class="fa-solid fa-arrow-up"></i></a>
+      <p class="secp">©Adel -2023. All Rights Reserved.</p>
     </footer>
     <script>
-        function sendmail(){
-            console.log(document.querySelector("#email"));
-            (function(){
-                emailjs.init("ZdHlZv8oVC2pij1Ps");
-            })();
-            var params = {
-                firstname: document.querySelector("#firstname").value,
-                lastname: document.querySelector("#lastname").value,
-                email: document.querySelector("#email").value,
-                subject :document.querySelector("#subject").value
-            }
-            var serviceid = "service_9y96g27"
-            var templateid = "template_nngyjuw" 
+      function sendmail() {
+        (function () {
+          emailjs.init("ZdHlZv8oVC2pij1Ps");
+        })();
+        var params = {
+          firstname: document.querySelector("#firstname").value,
+          lastname: document.querySelector("#lastname").value,
+          email: document.querySelector("#email").value,
+          subject: document.querySelector("#subject").value,
+        };
+        var serviceid = "service_9y96g27";
+        var templateid = "template_nngyjuw";
 
-            emailjs.send(serviceid, templateid, params)
-            .then(res => {
-                alert("email sent successfully")
-            })
-            .catch();
-        }
+        emailjs
+          .send(serviceid, templateid, params)
+          .then((res) => {
+            popup();
+          })
+          .catch();
+      }
     </script>
-   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-        var typeing = new Typed(".lines", {
-            strings : ["full-stack","front-end","back-end"],
-            loop : true,
-            typeSpeed : 100,
-            backSpeed : 100,
-            backDelay : 1500
-        })
+      var typeing = new Typed(".lines", {
+        strings: [
+          "full-stack developer",
+          "front-end developer",
+          "back-end developer",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1500,
+      });
     </script>
-</body>
+  </body>
 </html>
-
-
-
-
-

@@ -72,7 +72,7 @@ nav {
   height: 450px;
   width: 450px;
   border-radius: 50%;
-  left: -160px;
+  left: -180px;
   top: 20%;
   background: linear-gradient(
     45deg,
@@ -83,6 +83,11 @@ nav {
   );
 }
 
+#popup-modal{
+ position: fixed;
+ top: 50px;
+ left: 35%;
+}
 .cols0 {
   z-index: 5;
 }
@@ -95,12 +100,12 @@ nav {
   display: block;
   position: relative;
   font-size: 30px;
-  color: #3d535f;
+  color: #efcffe;
 }
 
 .h1 {
   display: block;
-  font-size: 4em;
+  font-size: 45px;
   font-weight: 900;
   color: #3d535f;
 }
@@ -494,7 +499,7 @@ footer p {
 
   .button:hover {
     background-color: orangered;
-    color: white;
+    color: #fecffc;
   }
 
   .img1 {
@@ -699,5 +704,10 @@ footer p {
   align-items: center;
   justify-content: center;
 }
+#popup-modal{
+  position: fixed;
+  top: 20px;
+  left: 13%;
+ }
 
 }
